@@ -1,0 +1,12 @@
+# Install dependencies
+# pip install -r requirements.txt
+# playwright install chromium
+
+typer[all]>=0.9
+httpx>=0.27
+beautifulsoup4>=4.12
+rich>=13
+rapidfuzz>=3
+playwright>=1.44
+tf-playwright-stealth>=1.1
+tomli-w>=1.0

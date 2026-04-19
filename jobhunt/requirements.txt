@@ -1,8 +1,0 @@
-typer[all]
-beautifulsoup4
-rich
-python-dateutil
-playwright
-playwright-stealth
-chromium
-rapidfuzz
