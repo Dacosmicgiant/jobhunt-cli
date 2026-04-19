@@ -6,7 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "jobhunt"
 version = "0.1.0"
 description = "Aggregate fresher full-stack roles from multiple job platforms"
+readme = "README.md"
 requires-python = ">=3.11"
+license = {text = "MIT"}
+keywords = ["jobs", "cli", "scraping", "full-stack", "fresher"]
 dependencies = [
     "typer[all]>=0.9",
     "httpx>=0.27",
@@ -21,6 +24,14 @@ dependencies = [
 [project.scripts]
 jobhunt = "jobhunt.cli:app"
 
+[project.urls]
+Homepage = "https://github.com/Dacosmicgiant/jobhunt-cli"
+Repository = "https://github.com/Dacosmicgiant/jobhunt-cli"
+Issues = "https://github.com/Dacosmicgiant/jobhunt-cli/issues"
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["jobhunt*"]
+
+[tool.setuptools.package-data]
+jobhunt = ["py.typed"]
